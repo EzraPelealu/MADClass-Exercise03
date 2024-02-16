@@ -20,7 +20,7 @@ const SignInScreen = () => {
           style={styles.input}
           value={username}
           onChangeText={setUsername}
-          placeholder="Enter your username"
+          placeholder="Masukan username anda"
         />
       </View>
       <View style={styles.inputContainer}>
@@ -29,7 +29,7 @@ const SignInScreen = () => {
           style={styles.input}
           value={password}
           onChangeText={setPassword}
-          placeholder="Enter your password"
+          placeholder="Masukan password anda"
           secureTextEntry={true}
         />
       </View>
@@ -43,12 +43,14 @@ const SignInScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
     paddingHorizontal: 20,
+    paddingTop: 30,
   },
   welcomeText: {
-    fontSize: 24,
+    color: 'black',
+    fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 20,
   },
@@ -68,14 +70,18 @@ const styles = StyleSheet.create({
   },
   signInButton: {
     backgroundColor: 'orange',
-    paddingVertical: 12,
+    paddingVertical: 16,
     paddingHorizontal: 30,
-    borderRadius: 5,
+    borderRadius: 10,
+    alignSelf: 'center',
+    width: '100%',
+    marginTop: 30,
   },
   signInButtonText: {
     color: 'white',
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: 'bold',
+    textAlign: 'center',
   },
 });
 
